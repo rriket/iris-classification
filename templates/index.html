@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iris Flower Classification</title>
+    <title>Flower Predictor</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -48,16 +48,11 @@
         input[type='submit']:hover {
             background-color: #45a049;
         }
-
-        h1 {
-            color: purple;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
-    <h1>Iris Flower Classification</h1>
+    
     <form action='/predict' method="POST">
         <label for='sepal_length'>Sepal Length:</label>
         <input type='text' name='sepal_length'>
