@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Predictor</title>
+    <title>Iris Flower Classification</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-image: url('https://github.com/rriket/iris-classification/blob/main/templates/do.jpeg'); /* Add the path to your image */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             display: flex;
@@ -51,11 +48,16 @@
         input[type='submit']:hover {
             background-color: #45a049;
         }
+
+        h1 {
+            color: purple;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-   
+    <h1>Iris Flower Classification</h1>
     <form action='/predict' method="POST">
         <label for='sepal_length'>Sepal Length:</label>
         <input type='text' name='sepal_length'>
