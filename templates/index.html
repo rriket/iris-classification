@@ -8,7 +8,10 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('do.jpeg'); /* Add the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
@@ -52,13 +55,23 @@
 </head>
 
 <body>
+   
     <form action='/predict' method="POST">
+        <label for='sepal_length'>Sepal Length:</label>
+        <input type='text' name='sepal_length'>
 
-        Sepal Length: <input type='text' name='sepal_length'><br>
-        Sepal Width: <input type='text' name='sepal_width'><br>
-        Petal Length: <input type='text' name= 'petal_length'><br>
-        Petal Width: <input type='text' name='petal_width'><br>
-        Class: {{result}} <br>
+        <label for='sepal_width'>Sepal Width:</label>
+        <input type='text' name='sepal_width'>
+
+        <label for='petal_length'>Petal Length:</label>
+        <input type='text' name='petal_length'>
+
+        <label for='petal_width'>Petal Width:</label>
+        <input type='text' name='petal_width'>
+
+        <label for='result'>Class:</label>
+        <span id='result'>{{result}}</span>
+
         <input type='submit' value='Predict'>
     </form>
 </body>
