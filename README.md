@@ -1,5 +1,6 @@
 # ML-projects
 # iris classification
+data set can be found on kaggle
 site : https://iris-classification-4wpy.onrender.com
 
 site video:
